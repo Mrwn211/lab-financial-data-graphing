@@ -42,9 +42,5 @@ const printGraph = (labels, data) => {
 
 getDataAndPrintGraph();
 
-startInput.onchange = function() {
-  getDataAndPrintGraph();
-};
-endInput.onchange = function() {
-  getDataAndPrintGraph();
-};
+startInput.onchange = getDataAndPrintGraph;
+endInput.onchange = getDataAndPrintGraph;
